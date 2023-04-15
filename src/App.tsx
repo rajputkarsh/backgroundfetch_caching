@@ -1,9 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+import { URLS } from './constants';
 
 function App() {
+
+  // const fetchImages = async () => {
+  //   console.log('Fetching Images, total - ', URLS.length);
+  //   let registration = await navigator.serviceWorker.ready;
+
+  //   // @ts-ignore1
+  //   const response = await registration.backgroundFetch.fetch(
+  //     'KFC-Images', 
+  //     URLS,
+  //     {
+  //       title: "ABCD",
+  //       icons: [
+  //         {
+  //           sizes: "300x300",
+  //           src: "/vite.svg",
+  //           type: "image/svg",
+  //         },
+  //       ],
+  //       downloadTotal: 60 * 1024 * 1024,
+  //     }          
+  //   );
+
+  //   if ('serviceWorker' in navigator) {
+  //     window.addEventListener('load', () => {
+  //       navigator.serviceWorker.register('/service-worker.js');
+  //     });
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   fetchImages();
+  // });
+
+
+
   const [count, setCount] = useState(0)
 
   return (

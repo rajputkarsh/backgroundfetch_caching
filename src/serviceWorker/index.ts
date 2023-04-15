@@ -23,8 +23,6 @@ const isLocalhost = Boolean(
 export function register(config: {[key: string]: any}) {
     if ('serviceWorker' in navigator) {
         // The URL constructor is available in all browsers that support SW.
-        const publicUrl = new URL(window.location.origin);
-
         window.addEventListener('load', () => {
             const swUrl = `${window.location.origin}/service-worker.js`;
 
